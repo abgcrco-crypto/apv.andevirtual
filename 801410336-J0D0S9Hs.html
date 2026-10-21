@@ -1,0 +1,141 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Estructura con Bootstrap</title>
+    <!-- Bootstrap 3 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        body {
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+        }
+        /* Fondo blanco que ocupa todo el ancho superior, pero su contenido irá centrado */
+        .header-wrapper {
+            background-color: #fff;
+            padding: 15px 0;
+            margin-bottom: 15px;
+        }
+        /* Flexbox para alinear el logo a la izquierda y redes a la derecha dentro del container */
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .header-title h2 {
+            color: #1b3058;
+            margin: 0;
+            font-weight: normal;
+        }
+        /* Barra de navegación ajustada exactamente al ancho del container */
+        .custom-nav {
+            background-color: #202F50;
+            color: white;
+            padding: 18px 20px;
+            margin-bottom: 15px;
+        }
+        .custom-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .alert-custom {
+            padding: 25px;
+            border-radius: 4px;
+        }
+        .footer-box {
+            background-color: #fff;
+            border: 1px solid #e7e7e7;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <!-- Envoltorio para el fondo blanco superior -->
+        <div class="header-wrapper">
+            <!-- La clase 'container' centra el encabezado igual que el contenido de abajo -->
+            <div class="container">
+                <div class="header-top">
+                    <div class="header-title">
+                        <img src="https://apv.andevirtual.com/images/Logo-ANDE.png" alt="Inicio" style="max-height: 70px;">
+                        <h2>ANDE APV 2026</h2>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook-official fa-2x" style="color: #202F50;"></i>
+                        <span style="border-left: 1px solid red; margin: 0 10px;"></span>
+                        <i class="fa fa-youtube-square fa-2x" style="color: #202F50;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BARRA DE NAVEGACIÓN -->
+        <div class="container">
+            <nav class="custom-nav">
+                <a href="https://www.ande.cr/"><span class="icon-home"></span>Página ANDE</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="container">
+        
+        <!-- Componente Alert de Bootstrap -->
+        <div class="alert alert-success alert-custom" role="alert">
+            <h4 class="alert-heading">CERTIFICADO VÁLIDO</h4>
+            <hr>
+        </div>
+
+        <!-- Componente Panel de Bootstrap -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <b>Validación de Autenticidad de Certificado</b>
+            </div>
+            <div class="panel-body">
+                <div class="col-md-12">
+                    <br>
+                    <!-- Tabla de datos -->
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td style="width: 20%;">Identificación</td>
+                                <td>801410336</td>
+                            </tr>
+                            <tr>
+                                <td>Nombre de Usuario</td>
+                                <td>ARMANDO JOSE BELLO GUZMAN</td>
+                            </tr>
+                            <tr>
+                                <td>Fecha</td>
+                                <td>Miércoles 21 de Octubre de 2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="container">
+        <div class="footer-box">
+            <p style="margin: 0;">© 2026 <b>Sindicato ANDE</b> · Dpto. Informática</p>
+        </div>
+    </footer>
+
+
+</body></html>
